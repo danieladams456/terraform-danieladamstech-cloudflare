@@ -15,7 +15,8 @@ resource "cloudflare_ruleset" "root_to_blog" {
         }
       }
     }
-    expression = "(http.host eq \"danieladamstech.com\")"
-    enabled    = true
+    expression  = "(http.host eq \"danieladamstech.com\")"
+    description = "Redirect root domain to blog subdomain"
+    enabled     = true
   }
 }
