@@ -1,3 +1,3 @@
 resource "cloudflare_zone_dnssec" "danieladamstech" {
-  zone_id = cloudflare_zone.danieladamstech.id
+  zone_id = data.cloudflare_zone.danieladamstech.id
 }
