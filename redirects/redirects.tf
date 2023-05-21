@@ -3,7 +3,7 @@ resource "cloudflare_ruleset" "root_to_blog" {
   name        = "root-to-blog"
   description = "Redirect root domain to blog subdomain"
   kind        = "zone"
-  phase       = "http_request_redirect"
+  phase       = "http_request_dynamic_redirect"
 
   rules {
     action = "redirect"
