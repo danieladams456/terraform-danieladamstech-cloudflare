@@ -1,3 +1,3 @@
 locals {
-  pages_records = ["@", "blog"]
+  pages_records = toset(["@", "blog"])
 }
