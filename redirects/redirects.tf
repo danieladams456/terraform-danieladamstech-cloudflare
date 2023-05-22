@@ -11,7 +11,7 @@ resource "cloudflare_ruleset" "root_to_blog" {
       from_value {
         status_code = 302
         target_url {
-          value = "blog.danieladamstech.com"
+          value = "https://blog.danieladamstech.com"
         }
       }
     }
