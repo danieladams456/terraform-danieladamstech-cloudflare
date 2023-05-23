@@ -7,6 +7,13 @@ terraform {
       version = "~> 4.0"
     }
   }
+
+  cloud {
+    organization = "danieladamstech"
+    workspaces {
+      name = "cloudflare-dns-records"
+    }
+  }
 }
 
 provider "cloudflare" {}
