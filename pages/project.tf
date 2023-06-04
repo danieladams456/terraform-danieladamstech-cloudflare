@@ -14,7 +14,8 @@ resource "cloudflare_pages_project" "blog" {
   }
 
   build_config {
-    build_command   = "hugo"
+    # custom build script that builds drafts on preview branch but not on main
+    build_command   = "./build.sh"
     destination_dir = "public"
   }
 
