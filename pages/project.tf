@@ -23,13 +23,13 @@ resource "cloudflare_pages_project" "blog" {
     preview {
       always_use_latest_compatibility_date = true
       environment_variables = {
-        HUGO_VERSION = "0.120.4"
+        HUGO_VERSION = "0.122.0"
       }
     }
     production {
       compatibility_date = "2023-03-14"
       environment_variables = {
-        HUGO_VERSION = "0.120.4"
+        HUGO_VERSION = "0.122.0"
       }
     }
   }
